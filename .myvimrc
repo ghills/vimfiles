@@ -63,3 +63,9 @@ set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
+
+" ================ Mappings =======================
+
+" <leader>cd to change working dir to open files folder
+nnoremap <leader>cd :cd %:p:h<CR>
+
