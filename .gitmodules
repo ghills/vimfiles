@@ -13,3 +13,6 @@
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/corntrace/bufexplorer.git
+[submodule "bundle/vim-neatstatus"]
+	path = bundle/vim-neatstatus
+	url = git://github.com/maciakl/vim-neatstatus.git
