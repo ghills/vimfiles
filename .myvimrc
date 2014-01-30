@@ -69,3 +69,5 @@ set wildignore+=*.png,*.jpg,*.gif
 " <leader>cd to change working dir to open files folder
 nnoremap <leader>cd :cd %:p:h<CR>
 
+" <F4> opens nerdtree
+map <F4> :NERDTreeToggle<CR>
