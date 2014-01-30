@@ -72,3 +72,6 @@ nnoremap <leader>cd :cd %:p:h<CR>
 
 " <F4> opens nerdtree
 map <F4> :NERDTreeToggle<CR>
+
+" <F8> opens tagbar
+nmap <F8> :TagbarToggle<CR>
