@@ -19,6 +19,9 @@ set hidden
 "turn on syntax highlighting
 syntax on
 
+"use OS clipboard
+set clipboard=unnamed
+
 " ================ Turn Off Swap Files ==============
 
 set noswapfile
@@ -37,9 +40,6 @@ set expandtab
 
 filetype plugin on
 filetype indent on
-
-" Display tabs and trailing spaces visually
-set list listchars=tab:\ \ ,trail:·
 
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
@@ -64,6 +64,18 @@ set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
+
+" ================ GUI stuffs =======================
+
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
 
 " ================ Mappings =======================
 
